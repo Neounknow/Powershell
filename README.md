@@ -2,5 +2,8 @@
 See number of log by category
 > Get-EventLog -List
 
-See log detail 
-> Get-EventLog -LogName [Category Name] -Newest 20
+See log list 
+> Get-EventLog -LogName Application -Newest 20
+
+See log detail
+> (Get-Eventlog -index 910 application).message
